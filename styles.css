@@ -6,6 +6,7 @@
     --placeholder-color:#686868;
     --primary-color:#fff;
     --secondary-color:#181818;
+    --secondary-color-overlay:#000;
     --border-color:#707070;
     --card-footer-color:#0837A5;
 }
@@ -13,6 +14,7 @@
 [data-theme="dark"] {
     --primary-color: #181818;
     --secondary-color: #fff;
+    --secondary-color-overlay:rgb(134, 131, 131);
     --bg-color: #202020;
     --placeholder-color:#e1e1ff;
     --card-footer-color:#46a1a1;
@@ -229,7 +231,7 @@ input:checked + .slider:before {
     text-decoration: underline;
     color: #072977;
 }
-
+    
 footer{
     text-align: center;
     padding-top: 5%;
@@ -245,4 +247,9 @@ footer p{
 footer a{
     text-decoration: underline;
     color:var(--secondary-color);
+}
+footer a:hover{
+    color:var(--secondary-color-overlay);
+    font-weight: 800;
+    transition: 0.5s ease;
 }
